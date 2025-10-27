@@ -17,6 +17,11 @@ namespace ReadingFile
             openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
             openFileDialog1.ShowDialog();
             var path = openFileDialog1.FileName;
+
+            lvShowText.View = View.Details;
+            lvShowText.Columns.Clear();
+            lvShowText.Columns.Add("Text");
+
             using (StreamReader streamReader = File.OpenText(path))
             {
                 string _getText = "";
@@ -25,6 +30,9 @@ namespace ReadingFile
                     Console.WriteLine(_getText);
                     lvShowText.Items.Add(_getText);
                 }
+
+                lvShowText.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+
             }
         }
 

@@ -28,17 +28,26 @@ namespace ReadingFile
             openFileDialog1.InitialDirectory = @"C:\";
             openFileDialog1.Title = "Browse Text Files";
             openFileDialog1.DefaultExt = "txt";
-            openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
-            openFileDialog1.ShowDialog();
-            var path = openFileDialog1.FileName;
-            using (StreamReader streamReader = File.OpenText(path))
+            openFileDialog1.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                string _getText = "";
-                while ((_getText = streamReader.ReadLine()) != null)
+                var path = openFileDialog1.FileName;
+
+                using (StreamReader streamReader = File.OpenText(path))
                 {
-                    Console.WriteLine(_getText);
-                    lvShowText.Items.Add(_getText);
+                    string line;
+                    while ((line = streamReader.ReadLine()) != null)
+                    {
+                        lvShowText.Items.Add(line);
+                    }
                 }
+
+                MessageBox.Show("File loaded successfully!");
+            }
+            else
+            {
+                MessageBox.Show("No file selected.");
             }
         }
 
