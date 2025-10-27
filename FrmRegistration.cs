@@ -34,14 +34,22 @@ namespace ReadingFile
             {
                 var builder = new StringBuilder();
                 builder.AppendLine("Student No.: " + tbStudentNo.Text);
+
                 builder.AppendLine("Full Name: " + tbLastName.Text + ", " + tbFirstName.Text + " " + tbMiddle.Text);
+
                 builder.AppendLine("Program: " + cbProgram.SelectedItem.ToString());
+
                 builder.AppendLine("Gender: " + cbGender.SelectedItem.ToString());
+
                 builder.AppendLine("Age: " + tbAge.Text);
+
                 builder.AppendLine("Birthday: " + dtpBirthday.Value.ToShortDateString());
+
                 builder.AppendLine("Contact No.: " + tbContactNo.Text);
 
                 outputFile.Write(builder.ToString());
+
+                MessageBox.Show("Record Created Successfully!");
             }
         }
 
@@ -49,12 +57,11 @@ namespace ReadingFile
         {
             var programs = new List<string>
             {
-                "Computer Science",
-                "Information Technology",
-                "Accountancy",
-                "Business Administration",
-                "Psychology",
-                "Engineering"
+                "BS in Computer Science",
+                "BS in Information Technology",
+                "BS in Accountancy",
+                "BS in Business Administration",
+                "BS in Psychology"
             };
 
             foreach (var program in programs) cbProgram.Items.Add(program);
@@ -63,6 +70,7 @@ namespace ReadingFile
             {
                 "Male",
                 "Female",
+                "Prefer not to say"
             };
 
             foreach (var gender in genders) cbGender.Items.Add(gender);

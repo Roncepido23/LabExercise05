@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStudentRecord));
             label1 = new Label();
             lvShowText = new ListView();
             btnRegister = new Button();
@@ -39,11 +40,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Impact", 24F);
-            label1.ForeColor = SystemColors.ButtonFace;
-            label1.Location = new Point(19, 22);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Impact", 30F);
+            label1.ForeColor = Color.DarkSlateGray;
+            label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(177, 39);
+            label1.Size = new Size(222, 48);
             label1.TabIndex = 0;
             label1.Text = "View Record";
             // 
@@ -57,11 +59,11 @@
             // 
             // btnRegister
             // 
-            btnRegister.BackColor = Color.Black;
+            btnRegister.BackColor = Color.DodgerBlue;
             btnRegister.FlatStyle = FlatStyle.Flat;
             btnRegister.Font = new Font("Impact", 12F);
             btnRegister.ForeColor = SystemColors.ButtonFace;
-            btnRegister.Location = new Point(442, 357);
+            btnRegister.Location = new Point(458, 361);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(99, 41);
             btnRegister.TabIndex = 2;
@@ -71,11 +73,11 @@
             // 
             // btnFind
             // 
-            btnFind.BackColor = Color.Black;
+            btnFind.BackColor = Color.DodgerBlue;
             btnFind.FlatStyle = FlatStyle.Flat;
             btnFind.Font = new Font("Impact", 12F);
             btnFind.ForeColor = SystemColors.ButtonFace;
-            btnFind.Location = new Point(265, 358);
+            btnFind.Location = new Point(262, 361);
             btnFind.Name = "btnFind";
             btnFind.Size = new Size(99, 40);
             btnFind.TabIndex = 3;
@@ -85,11 +87,11 @@
             // 
             // btnUpload
             // 
-            btnUpload.BackColor = Color.Black;
+            btnUpload.BackColor = Color.DodgerBlue;
             btnUpload.FlatStyle = FlatStyle.Flat;
             btnUpload.Font = new Font("Impact", 12F);
             btnUpload.ForeColor = SystemColors.ButtonFace;
-            btnUpload.Location = new Point(65, 361);
+            btnUpload.Location = new Point(66, 365);
             btnUpload.Name = "btnUpload";
             btnUpload.Size = new Size(99, 37);
             btnUpload.TabIndex = 4;
@@ -105,7 +107,9 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.IndianRed;
+            BackColor = Color.Black;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(619, 422);
             Controls.Add(btnUpload);
             Controls.Add(btnFind);

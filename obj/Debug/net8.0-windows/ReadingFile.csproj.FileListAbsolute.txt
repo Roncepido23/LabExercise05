@@ -21,7 +21,6 @@ C:\Users\Engr.Oncepido\Source\Repos\ReadingFile\ReadingFile\bin\Debug\net8.0-win
 C:\Users\Engr.Oncepido\Source\Repos\ReadingFile\ReadingFile\bin\Debug\net8.0-windows\ReadingFile.runtimeconfig.json
 C:\Users\Engr.Oncepido\Source\Repos\ReadingFile\ReadingFile\bin\Debug\net8.0-windows\ReadingFile.dll
 C:\Users\Engr.Oncepido\Source\Repos\ReadingFile\ReadingFile\bin\Debug\net8.0-windows\ReadingFile.pdb
-C:\Users\Engr.Oncepido\Source\Repos\ReadingFile\ReadingFile\obj\Debug\net8.0-windows\ReadingFile.FrmOpenTextFile.resources
 C:\Users\Engr.Oncepido\Source\Repos\ReadingFile\ReadingFile\obj\Debug\net8.0-windows\ReadingFile.FrmRegistration.resources
 C:\Users\Engr.Oncepido\Source\Repos\ReadingFile\ReadingFile\obj\Debug\net8.0-windows\ReadingFile.FrmStudentRecord.resources
 C:\Users\Engr.Oncepido\Source\Repos\ReadingFile\ReadingFile\obj\Debug\net8.0-windows\ReadingFile.csproj.GenerateResource.cache
@@ -36,3 +35,4 @@ C:\Users\Engr.Oncepido\Source\Repos\ReadingFile\ReadingFile\obj\Debug\net8.0-win
 C:\Users\Engr.Oncepido\Source\Repos\ReadingFile\ReadingFile\obj\Debug\net8.0-windows\ReadingFile.genruntimeconfig.cache
 C:\Users\Engr.Oncepido\Source\Repos\ReadingFile\ReadingFile\obj\Debug\net8.0-windows\ref\ReadingFile.dll
 C:\Users\Engr.Oncepido\Source\Repos\ReadingFile\ReadingFile\obj\Debug\net8.0-windows\ReadingFile.Properties.Resources.resources
+C:\Users\Engr.Oncepido\Source\Repos\ReadingFile\ReadingFile\obj\Debug\net8.0-windows\ReadingFile.btnCreate.resources

@@ -2,9 +2,9 @@ using System.IO;
 
 namespace ReadingFile
 {
-    public partial class FrmOpenTextFile : Form
+    public partial class btnCreate : Form
     {
-        public FrmOpenTextFile()
+        public btnCreate()
         {
             InitializeComponent();
         }
@@ -44,7 +44,7 @@ namespace ReadingFile
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new FrmStudentRecord().Show();
+            new FrmRegistration().Show();
         }
     }
 }

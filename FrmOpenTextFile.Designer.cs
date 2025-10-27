@@ -1,6 +1,6 @@
 ﻿namespace ReadingFile
 {
-    partial class FrmOpenTextFile
+    partial class btnCreate
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(btnCreate));
             lvShowText = new ListView();
             btnOpen = new Button();
             openFileDialog1 = new OpenFileDialog();
@@ -44,7 +45,7 @@
             // 
             // btnOpen
             // 
-            btnOpen.BackColor = Color.Black;
+            btnOpen.BackColor = Color.DodgerBlue;
             btnOpen.FlatStyle = FlatStyle.Flat;
             btnOpen.Font = new Font("Impact", 12F);
             btnOpen.ForeColor = SystemColors.ButtonFace;
@@ -62,7 +63,7 @@
             // 
             // btnStudentRecord
             // 
-            btnStudentRecord.BackColor = Color.Black;
+            btnStudentRecord.BackColor = Color.DodgerBlue;
             btnStudentRecord.FlatStyle = FlatStyle.Flat;
             btnStudentRecord.Font = new Font("Impact", 12F);
             btnStudentRecord.ForeColor = SystemColors.ButtonFace;
@@ -70,20 +71,22 @@
             btnStudentRecord.Name = "btnStudentRecord";
             btnStudentRecord.Size = new Size(116, 34);
             btnStudentRecord.TabIndex = 2;
-            btnStudentRecord.Text = "Student Record";
+            btnStudentRecord.Text = "Create";
             btnStudentRecord.UseVisualStyleBackColor = false;
             btnStudentRecord.Click += button1_Click;
             // 
-            // FrmOpenTextFile
+            // btnCreate
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.IndianRed;
+            BackColor = Color.Black;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(766, 367);
             Controls.Add(btnStudentRecord);
             Controls.Add(btnOpen);
             Controls.Add(lvShowText);
-            Name = "FrmOpenTextFile";
+            Name = "btnCreate";
             Text = "FrmOpenTextFile";
             ResumeLayout(false);
         }
