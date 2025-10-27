@@ -34,6 +34,13 @@ namespace ReadingFile
             {
                 var path = openFileDialog1.FileName;
 
+                lvShowText.View = View.Details;
+
+                lvShowText.Columns.Clear();
+                lvShowText.Items.Clear();
+
+                lvShowText.Columns.Add("Content", 500);
+
                 using (StreamReader streamReader = File.OpenText(path))
                 {
                     string line;
