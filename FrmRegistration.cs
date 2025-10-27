@@ -34,21 +34,13 @@ namespace ReadingFile
             {
                 var builder = new StringBuilder();
                 builder.AppendLine("Student No.: " + tbStudentNo.Text);
-
                 builder.AppendLine("Full Name: " + tbLastName.Text + ", " + tbFirstName.Text + " " + tbMiddle.Text);
-
                 builder.AppendLine("Program: " + cbProgram.SelectedItem.ToString());
-
                 builder.AppendLine("Gender: " + cbGender.SelectedItem.ToString());
-
                 builder.AppendLine("Age: " + tbAge.Text);
-
                 builder.AppendLine("Birthday: " + dtpBirthday.Value.ToShortDateString());
-
                 builder.AppendLine("Contact No.: " + tbContactNo.Text);
-
                 outputFile.Write(builder.ToString());
-
                 MessageBox.Show("Record Created Successfully!");
             }
         }
@@ -61,7 +53,8 @@ namespace ReadingFile
                 "BS in Information Technology",
                 "BS in Accountancy",
                 "BS in Business Administration",
-                "BS in Psychology"
+                "BS in Psychology",
+                "BS in Engineering"
             };
 
             foreach (var program in programs) cbProgram.Items.Add(program);
@@ -70,6 +63,7 @@ namespace ReadingFile
             {
                 "Male",
                 "Female",
+                "Others",
                 "Prefer not to say"
             };
 

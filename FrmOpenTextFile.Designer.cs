@@ -67,7 +67,7 @@
             btnStudentRecord.FlatStyle = FlatStyle.Flat;
             btnStudentRecord.Font = new Font("Impact", 12F);
             btnStudentRecord.ForeColor = SystemColors.ButtonFace;
-            btnStudentRecord.Location = new Point(429, 306);
+            btnStudentRecord.Location = new Point(437, 306);
             btnStudentRecord.Name = "btnStudentRecord";
             btnStudentRecord.Size = new Size(116, 34);
             btnStudentRecord.TabIndex = 2;

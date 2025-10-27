@@ -245,7 +245,7 @@
             btnRegister.FlatStyle = FlatStyle.Flat;
             btnRegister.Font = new Font("Impact", 12F);
             btnRegister.ForeColor = SystemColors.ButtonFace;
-            btnRegister.Location = new Point(275, 358);
+            btnRegister.Location = new Point(291, 358);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(127, 39);
             btnRegister.TabIndex = 20;
@@ -259,7 +259,7 @@
             btnRecords.FlatStyle = FlatStyle.Flat;
             btnRecords.Font = new Font("Impact", 12F);
             btnRecords.ForeColor = SystemColors.ButtonFace;
-            btnRecords.Location = new Point(456, 358);
+            btnRecords.Location = new Point(484, 358);
             btnRecords.Name = "btnRecords";
             btnRecords.Size = new Size(125, 39);
             btnRecords.TabIndex = 21;

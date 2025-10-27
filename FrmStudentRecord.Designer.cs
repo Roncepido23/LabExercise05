@@ -77,7 +77,7 @@
             btnFind.FlatStyle = FlatStyle.Flat;
             btnFind.Font = new Font("Impact", 12F);
             btnFind.ForeColor = SystemColors.ButtonFace;
-            btnFind.Location = new Point(262, 361);
+            btnFind.Location = new Point(268, 361);
             btnFind.Name = "btnFind";
             btnFind.Size = new Size(99, 40);
             btnFind.TabIndex = 3;
